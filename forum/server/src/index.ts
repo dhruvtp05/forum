@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import itemRoutes from './routes/items';
+import itemRoutes from './routes/users';
 import connectToDatabase from './config/database';
 
 dotenv.config();
