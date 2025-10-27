@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import itemRoutes from './routes/users';
+import userRoutes from './routes/users';
 import connectToDatabase from './config/database';
 
 dotenv.config();
@@ -18,7 +18,7 @@ app.use(express.json());
 connectToDatabase();
 
 // Routes
-app.use('/api', itemRoutes);
+app.use('/api', userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
